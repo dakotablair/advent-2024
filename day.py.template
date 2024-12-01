@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+""" day N """
+
+
+def pt1(lines):
+    """day num part one"""
+    return len(lines)
+
+
+def pt2(lines):
+    """day num part two"""
+    return len(lines)
+
+
+def main(prefix=""):
+    """day num"""
+    with open(f"{prefix}input.txt", encoding="utf-8") as i_f:
+        lines = i_f.read().split("\n")[:-1]
+
+    print("Part 1")
+    example_one = ""
+    example_one_lines = example_one.split("\n")
+    assert pt1(example_one_lines) == 142
+    print(pt1(lines))
+
+    print("Part 2")
+    example_two = ""
+    example_two_lines = example_two.split("\n")
+    assert pt2(example_two_lines) == 142
+    print(pt2(lines))
+
+
+if __name__ == "__main__":
+    main()
